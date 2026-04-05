@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taligos Apps | Something fun. Something useful.</title>
+    <meta
+      name="description"
+      content="Taligos Apps is home to One Up, Taligo, and NameDrop—original mobile games and practical tools with public support, privacy, and app information."
+    />
+    <meta property="og:title" content="Taligos Apps | Something fun. Something useful." />
+    <meta
+      property="og:description"
+      content="Discover One Up, Taligo, and NameDrop from Taligos Apps—mobile games and practical tools with support, privacy, and app information in one place."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://taligos.com/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Taligos Apps",
+        "url": "https://taligos.com",
+        "email": "hello@taligos.com",
+        "description": "Taligos Apps publishes mobile apps including One Up, Taligo, and NameDrop and provides public support and privacy information.",
+        "founder": {
+          "@type": "Person",
+          "name": "Rick Hutchinson"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Taligos Apps home">
+          <span class="brand-mark">T</span>
+          <span class="brand-text">Taligos Apps</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="siteNav">
+          <a href="index.html#apps">Apps</a>
+          <a href="index.html#about">About</a>
+          <a href="support.html" class="nav-cta">Support</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero simple-hero hero-lite" id="home">
+          <div class="hero-copy hero-copy-wide">
+            <h1>Something fun. Something useful.</h1>
+            <p class="hero-text">Taligos Apps is where Rick Hutchinson shares original mobile ideas—from quick games to practical tools that help people connect, remember well, and enjoy coming back.</p>
+          </div>
+        </section>
+
+        <section class="section apps-front apps-front-tight" id="apps">
+          <div class="app-showcase-grid app-showcase-grid-three">
+            <article class="card app-card feature-app app-card-simple" id="one-up">
+              <div class="app-topline">
+                <div class="app-badge">1U</div>
+                <span class="status-pill blue">Launching soon</span>
+              </div>
+              <div>
+                <h2>One Up</h2>
+                <p class="app-lead">A quick solo word game built around smart plays, sharp thinking, and the kind of quick rounds you want to jump back into.</p>
+              </div>
+            </article>
+
+            <article class="card app-card feature-app app-card-simple" id="taligo">
+              <div class="app-topline">
+                <div class="app-badge secondary">TG</div>
+                <span class="status-pill orange">In development</span>
+              </div>
+              <div>
+                <h2>Taligo</h2>
+                <p class="app-lead">A social game in development built to be easy to jump into and more fun when you share the experience with a friend.</p>
+              </div>
+            </article>
+
+            <article class="card app-card feature-app app-card-simple" id="namedrop">
+              <div class="app-topline">
+                <div class="app-badge tertiary">ND</div>
+                <span class="status-pill green">For pastors &amp; leaders</span>
+              </div>
+              <div>
+                <h2>NameDrop</h2>
+                <p class="app-lead">Keep names, context, and your next follow-up close at hand so pastors and church leaders can remember people well.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="support-cta support-cta-single">
+            <a class="button button-primary" href="support.html">Support</a>
+          </div>
+        </section>
+
+        <section class="section about-strip about-strip-tight" id="about">
+          <div class="card about-card about-card-simple">
+            <div class="section-heading narrow">
+              <p class="eyebrow">About Us</p>
+              <h2>Taligos Apps</h2>
+            </div>
+            <p>Taligos Apps is led by Rick Hutchinson, a product manager and pastor who likes the overlap of theology, technology, and good ideas made simple.</p>
+            <p>It is a place to make things that are genuinely enjoyable to use—whether that means a game you want to share or a practical tool that helps church leaders care for people well.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer simple-footer footer-policies-only">
+        <p>© <span id="year"></span> Taligos Apps</p>
+        <div class="footer-links">
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="support-policy.html">Support Policy</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
