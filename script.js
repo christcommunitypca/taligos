@@ -156,7 +156,15 @@ function handleSupportForm() {
     'one-up': 'One Up',
     'oneup': 'One Up',
     'one up': 'One Up',
-    'taligo': 'Taligo'
+    'taligo': 'TallyUp',
+    'tallyup': 'TallyUp',
+    'tally-up': 'TallyUp',
+    'name-drop': 'NameDrop',
+    'namedrop': 'NameDrop',
+    'worddrop': 'WordDrop',
+    'word-drop': 'WordDrop',
+    'receiptdrop': 'ReceiptDrop',
+    'receipt-drop': 'ReceiptDrop'
   };
 
   if (appMap[appParam]) {
@@ -299,3 +307,17 @@ Please attach these screenshots before sending.` : '');
 
 handleSupportForm();
 
+
+
+const heroWordmark = document.getElementById('heroWordmark');
+if (heroWordmark) {
+  const toggleHeroWordmark = () => {
+    if (window.scrollY > 36) {
+      heroWordmark.classList.add('is-hidden');
+    } else {
+      heroWordmark.classList.remove('is-hidden');
+    }
+  };
+  toggleHeroWordmark();
+  window.addEventListener('scroll', toggleHeroWordmark, { passive: true });
+}
