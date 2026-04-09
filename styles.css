@@ -1092,6 +1092,11 @@ input[type="file"] {
   margin: 2px 0 12px;
 }
 
+.app-meta-pills-stack {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .platform-pill {
   display: inline-flex;
   align-items: center;
