@@ -162,9 +162,7 @@ function handleSupportForm() {
     'name-drop': 'NameDrop',
     'namedrop': 'NameDrop',
     'worddrop': 'WordDrop',
-    'word-drop': 'WordDrop',
-    'receiptdrop': 'ReceiptDrop',
-    'receipt-drop': 'ReceiptDrop'
+    'word-drop': 'WordDrop'
   };
 
   if (appMap[appParam]) {
