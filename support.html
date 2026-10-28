@@ -4,47 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Support | Taligos Apps</title>
-    <meta name="description" content="Support for One Up, TallyUp, NameDrop, and WordDrop." />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="description" content="Support for One Up, TallyGo, NameDrop, and WordDrop." />
+    <meta name="theme-color" content="#fafaf7" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body><a class="skip-link" href="#main">Skip to content</a>
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand" href="index.html" aria-label="Taligos Apps home">
-          <span class="brand-mark"><img src="TaligoIcon.png" alt="Taligos Apps icon" /></span>
-          <span class="brand-text">Taligos Apps</span>
-        </a>
+<a class="brand" href="index.html" aria-label="Taligos Apps home"><img class="brand-icon" src="TaligoIcon.png" alt="" width="36" height="36"><span class="brand-text">Taligos Apps</span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
+<nav class="nav" id="siteNav" aria-label="Main navigation"><a href="index.html#apps">The apps</a><a href="index.html#about">About</a><a href="support.html">Support <span aria-hidden="true">↗</span></a></nav>
+</header>
 
-        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="nav" id="siteNav">
-          <a href="index.html#apps">Apps</a>
-          <a href="index.html#about">About</a>
-          <a href="support.html">Support</a>
-          
-        </nav>
-      </header>
-
-      <main>
+      <main id="main">
         <section class="section compact-top support-page-shell">
           <div class="section-heading narrow centered-copy support-heading-tight">
-            <p class="eyebrow">Support</p>
-            <h1 class="page-title">Support</h1>
-            <p>Choose an app and tell us what you need.</p>
+            <p class="eyebrow">Here to help</p>
+            <h1 class="page-title">Let’s get it sorted.</h1>
+            <p>Choose your app below. Ask a question, report an issue, or share an idea.</p>
           </div>
 
           <form class="support-flow" id="supportForm">
@@ -57,7 +37,7 @@
                 </div>
               </div>
 
-              <div class="choice-grid support-app-grid support-app-grid-five" role="radiogroup" aria-label="Select app">
+              <div class="choice-grid support-app-grid support-app-grid-five" role="group" aria-label="Select app">
                 <button class="choice-card" type="button" data-app-option="One Up" aria-pressed="false">
                   <img class="choice-icon" src="OneUpAppIcon.png" alt="OneUp app icon" />
                   <span>
@@ -65,10 +45,10 @@
                     <small>iOS &amp; web app</small>
                   </span>
                 </button>
-                <button class="choice-card" type="button" data-app-option="TallyUp" aria-pressed="false">
-                  <img class="choice-icon" src="TaligoIcon.png" alt="TallyUp app icon" />
+                <button class="choice-card" type="button" data-app-option="TallyGo" aria-pressed="false">
+                  <img class="choice-icon" src="TaligoIcon.png" alt="TallyGo app icon" />
                   <span>
-                    <strong>TallyUp</strong>
+                    <strong>TallyGo</strong>
                     <small>iOS &amp; web app</small>
                   </span>
                 </button>
@@ -99,7 +79,7 @@
                 </div>
               </div>
 
-              <div class="segmented segmented-three" role="tablist" aria-label="Support type">
+              <div class="segmented segmented-three" role="group" aria-label="Support type">
                 <button class="segment" type="button" data-support-type="bug" aria-pressed="false">Bug</button>
                 <button class="segment" type="button" data-support-type="question" aria-pressed="false">Question</button>
                 <button class="segment" type="button" data-support-type="feedback" aria-pressed="false">Feedback</button>
@@ -138,14 +118,14 @@
                   </label>
                   <label>
                     <span>Device</span>
-                    <input type="text" name="device" placeholder="iPhone 14 Pro" />
+                    <input type="text" name="device" placeholder="iPhone, Mac, or PC" />
                   </label>
                 </div>
 
                 <div class="support-grid three-col-fields">
                   <label>
-                    <span>iOS version</span>
-                    <input type="text" name="iosVersion" placeholder="iOS 18.1" />
+                    <span>OS / browser version</span>
+                    <input type="text" name="iosVersion" placeholder="iOS 18.1 or Chrome 130" />
                   </label>
                   <label>
                     <span>App version</span>
@@ -202,22 +182,15 @@
               </div>
 
               <div class="support-submit-row">
-                <button class="button button-primary" type="submit">Open draft</button>
+                <button class="button button-primary" type="submit">Continue to email <span aria-hidden="true">↗</span></button>
               </div>
-              <p class="policy-note">By submitting, you agree to the <a class="text-link" href="terms.html">Terms of Use</a>, <a class="text-link" href="privacy.html">Privacy Policy</a>, and <a class="text-link" href="support-policy.html">Support Policy</a>. We use the information you provide to respond to your request and improve app support.</p>
+              <p class="field-note">This opens a draft in your email app. Review it there before sending.</p><p class="policy-note">By submitting, you agree to the <a class="text-link" href="terms.html">Terms of Use</a>, <a class="text-link" href="privacy.html">Privacy Policy</a>, and <a class="text-link" href="support-policy.html">Support Policy</a>. We use the information you provide to respond to your request and improve app support.</p>
             </div>
           </form>
         </section>
       </main>
 
-      <footer class="footer simple-footer">
-        <p>© <span id="year"></span> Taligos Apps</p>
-        <div class="footer-links">
-          <a href="terms.html">Terms of Use</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="support-policy.html">Support Policy</a>
-        </div>
-      </footer>
+      <footer class="footer"><div><a class="footer-brand" href="index.html">Taligos Apps</a><p>© <span id="year">2026</span> Taligos Apps</p></div><div class="footer-links"><a href="support.html">Support</a><a href="terms.html">Terms of Use</a><a href="privacy.html">Privacy Policy</a><a href="support-policy.html">Support Policy</a></div></footer>
     </div>
 
     <script src="script.js"></script>

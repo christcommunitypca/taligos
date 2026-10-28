@@ -156,9 +156,11 @@ function handleSupportForm() {
     'one-up': 'One Up',
     'oneup': 'One Up',
     'one up': 'One Up',
-    'taligo': 'TallyUp',
-    'tallyup': 'TallyUp',
-    'tally-up': 'TallyUp',
+    'taligo': 'TallyGo',
+    'tallygo': 'TallyGo',
+    'tally-go': 'TallyGo',
+    'tallyup': 'TallyGo',
+    'tally-up': 'TallyGo',
     'name-drop': 'NameDrop',
     'namedrop': 'NameDrop',
     'worddrop': 'WordDrop',
@@ -274,7 +276,7 @@ ${details}`;
 ` +
         `Device: ${device}
 ` +
-        `iOS version: ${iosVersion}
+        `OS / browser version: ${iosVersion}
 ` +
         `App version: ${appVersion}
 ` +
