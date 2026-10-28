@@ -14,5 +14,3 @@
 @media(max-width:600px){.hero-content h1{font-size:46px;letter-spacing:-2.6px}}
 .purpose-banner>img{z-index:-2}.purpose-banner:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#faf9edb8,transparent 75%)}
 @media(max-width:600px){.bold-hero{background:#083773}}
-
-.brand-icon{width:36px;height:36px;object-fit:cover;border-radius:9px;flex-shrink:0}
