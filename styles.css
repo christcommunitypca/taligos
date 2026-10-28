@@ -24,3 +24,6 @@
 /* One compact primary action across the app collection. */
 .product .product-info{display:block}.product .product-info p{max-width:none;margin:9px 0 18px}.product .product-links{display:flex;flex-direction:row;align-items:center;gap:22px;padding:0;flex-wrap:wrap}.product .product-links .primary-action{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-height:44px;padding:11px 23px;gap:25px;background:#1646e9;color:#fff;border:0;border-radius:6px;font-size:14px;font-weight:650;line-height:1.5;text-decoration:none}.product .product-links .primary-action:hover{background:#0b32b4}.product .product-links .ios-link{font-size:12px;color:var(--muted);padding-bottom:3px;gap:10px}.product .product-links .primary-action:focus-visible{outline:2px solid #1646e9;outline-offset:4px}
 @media(max-width:600px){.product .product-links{gap:20px}.product .product-links .primary-action{min-height:44px;padding:11px 22px;font-size:14px;gap:24px}}
+
+.section-subtitle{font-size:15px;line-height:1.5;color:var(--muted);margin:10px 0 0}.audience-heading{font-size:28px;line-height:1.2;font-weight:700;letter-spacing:-.8px;margin:0 0 26px}
+@media(max-width:600px){.section-subtitle{font-size:14px;margin-top:10px}.audience-heading{font-size:25px;max-width:24ch;margin-bottom:22px}}
