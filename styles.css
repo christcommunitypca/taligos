@@ -27,3 +27,6 @@
 
 .section-subtitle{font-size:15px;line-height:1.5;color:var(--muted);margin:10px 0 0}.audience-heading{font-size:28px;line-height:1.2;font-weight:700;letter-spacing:-.8px;margin:0 0 26px}
 @media(max-width:600px){.section-subtitle{font-size:14px;margin-top:10px}.audience-heading{font-size:25px;max-width:24ch;margin-bottom:22px}}
+
+.purpose-banner .audience-tagline{font-size:14px;line-height:1.5;margin-top:16px;max-width:none;color:#39463b;font-weight:500}
+@media(max-width:600px){.purpose-banner .audience-tagline{font-size:13px;max-width:26ch}.hero-content h1{margin-top:12px}}
