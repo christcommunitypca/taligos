@@ -321,3 +321,23 @@ if (heroWordmark) {
   toggleHeroWordmark();
   window.addEventListener('scroll', toggleHeroWordmark, { passive: true });
 }
+
+// Choose once at load; alternate on subsequent loads in this tab.
+const heroHeadline = document.getElementById('heroHeadline');
+if (heroHeadline) {
+  const headlines = [
+    ['Made to play.', 'Built to help.'],
+    ['Something fun.', 'Something useful.']
+  ];
+  let next = Math.random() < 0.5 ? 0 : 1;
+  try {
+    const previous = sessionStorage.getItem('taligos.heroHeadline');
+    if (previous === '0' || previous === '1') next = 1 - Number(previous);
+    sessionStorage.setItem('taligos.heroHeadline', String(next));
+  } catch (_) { /* Random selection remains available when storage is disabled. */ }
+  heroHeadline.replaceChildren(
+    document.createTextNode(headlines[next][0]),
+    document.createElement('br'),
+    document.createTextNode(headlines[next][1])
+  );
+}
